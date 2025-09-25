@@ -5,7 +5,7 @@
     "license": "GPL-3.0-or-later",
     "require": {
         "sitegeist/kaleidoscope-valueobjects": "^1.2.1",
-        "sitegeist/kaleidoscope-lostintranslation": "*"
+        "sitegeist/lostintranslation": "*"
     },
     "autoload": {
         "psr-4": {

@@ -1,7 +1,8 @@
 {
-    "description": "",
+    "description": "Connects the Kaleidoscope.ValueObjects with LostInTranslation so alt and title will get translated automatically.\n\n",
     "type": "neos-package",
     "name": "sitegeist/kaleidoscope-valueobjects-lostintranslation",
+    "license": "GPL-3.0-or-later",
     "require": {
         "sitegeist/kaleidoscope-valueobjects": "^1.2.1",
         "sitegeist/kaleidoscope-lostintranslation": "*"

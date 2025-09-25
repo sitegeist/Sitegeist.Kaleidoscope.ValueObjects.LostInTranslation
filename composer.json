@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "sitegeist/kaleidoscope-valueobjects-lostintranslation",
+    "require": {
+        "sitegeist/kaleidoscope-valueobjects": "^1.2.1",
+        "sitegeist/kaleidoscope-lostintranslation": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sitegeist\\Kaleidoscope\\ValueObjects\\LostInTranslation\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sitegeist.Kaleidoscope.ValueObjects.LostInTranslation"
+        }
+    }
+}

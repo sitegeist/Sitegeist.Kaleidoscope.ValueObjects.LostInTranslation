@@ -1,0 +1,12 @@
+Sitegeist:
+  LostInTranslation:
+    nodeTranslation:
+      #
+      # Connectors to translate value object properties
+      #
+      # for each value object type a clas implementing the TranslationConnectorInterface
+      # can be configured to extract and apply translations
+      #
+      translationConnectors:
+        'Sitegeist\Kaleidoscope\ValueObjects\ImageSourceProxyCollection': 'Sitegeist\Kaleidoscope\ValueObjects\LostInTranslation\ImageSourceProxyCollectionLostInTranslationConnector'
+        'Sitegeist\Kaleidoscope\ValueObjects\ImageSourceProxy': 'Sitegeist\Kaleidoscope\ValueObjects\LostInTranslation\ImageSourceProxyLostInTranslationConnector'

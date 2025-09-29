@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Sitegeist\Kaleidoscope\ValueObjects\LostInTranslation;
@@ -9,8 +10,8 @@ use Sitegeist\LostInTranslation\Domain\TranslationConnectorInterface;
 /**
  * @implements TranslationConnectorInterface<ImageSourceProxy>
  */
-class ImageSourceProxyLostInTranslationConnector implements TranslationConnectorInterface {
-
+class ImageSourceProxyLostInTranslationConnector implements TranslationConnectorInterface
+{
     /**
      * @param ImageSourceProxy $object
      * @return array<string, string>

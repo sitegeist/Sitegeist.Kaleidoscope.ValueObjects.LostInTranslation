@@ -33,5 +33,11 @@
         "neos": {
             "package-key": "Sitegeist.Kaleidoscope.ValueObjects.LostInTranslation"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "neos/composer-plugin": true,
+            "php-http/discovery": false
+        }
     }
 }

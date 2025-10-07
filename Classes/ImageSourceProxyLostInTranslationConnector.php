@@ -56,8 +56,8 @@ class ImageSourceProxyLostInTranslationConnector implements TranslationConnector
     {
         return new ImageSourceProxy(
             $object->asset,
-            $translations['title'] ?? $object->title,
-            $translations['alt'] ?? $object->alt
+            $translations['alt'] ?? $object->alt,
+            $translations['title'] ?? $object->title
         );
     }
 }

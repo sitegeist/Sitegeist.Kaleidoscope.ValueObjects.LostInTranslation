@@ -5,7 +5,7 @@
     "license": "GPL-3.0-or-later",
     "require": {
         "sitegeist/kaleidoscope-valueobjects": "^1.2.1",
-        "sitegeist/lostintranslation": "^2.6.0"
+        "sitegeist/lostintranslation": "^2.6.0 || ^3.1.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10.0",

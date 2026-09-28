@@ -39,10 +39,20 @@ class ImageSourceProxyLostInTranslationConnector implements TranslationConnector
     {
         $translations = [];
         if ($object->title !== '') {
-            $translations['title'] = $object->title;
+            $translations['title'] = htmlspecialchars(
+                $object->title,
+                ENT_QUOTES | ENT_SUBSTITUTE | ENT_XML1,
+                'UTF-8',
+                false
+            );
         }
         if ($object->alt !== '') {
-            $translations['alt'] = $object->alt;
+            $translations['alt'] = htmlspecialchars(
+                $object->alt,
+                ENT_QUOTES | ENT_SUBSTITUTE | ENT_XML1,
+                'UTF-8',
+                false
+            );
         }
         return $translations;
     }
@@ -56,8 +66,12 @@ class ImageSourceProxyLostInTranslationConnector implements TranslationConnector
     {
         return new ImageSourceProxy(
             $object->asset,
-            $translations['alt'] ?? $object->alt,
-            $translations['title'] ?? $object->title
+            (array_key_exists('alt', $translations) && $translations['alt'])
+                ? htmlspecialchars_decode($translations['alt'], ENT_QUOTES | ENT_XML1)
+                : $object->alt,
+            (array_key_exists('title', $translations) && $translations['title'])
+                ? htmlspecialchars_decode($translations['title'], ENT_QUOTES | ENT_XML1)
+                : $object->title
         );
     }
 }
